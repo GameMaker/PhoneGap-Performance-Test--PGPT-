@@ -15,24 +15,23 @@ body {
 	margin:auto;
 }
 /* Utility classes for buttons and other common features */
-.BasicHeader {
+.basicHeader {
 	font-size:250%;
-	text-align: center;
-	font-weight: bolder;
+	text-align:center;
+	font-weight:bolder;
 	font-variant:small-caps;
 }
-#MenuTable {
+#menuTable {
 	width:80%;
 	margin:auto;
 }
-#MenuTable td{
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-top: 2%;
-	padding-bottom: 2%;
+#menuTable td {
+	padding-left:1%;
+	padding-right:1%;
+	padding-top:2%;
+	padding-bottom:2%;
 }
-
-.ButtonDefault {
+.buttonDefault {
 	font-size:100%;
 	color:#000000;
 	line-height:2.5;
@@ -41,8 +40,8 @@ body {
 	width:200px;
 	height:40px;
 }
-.ButtonEnabled {
-	font-weight: bold;
+.buttonEnabled {
+	font-weight:bold;
 	background:-webkit-gradient(
 	linear, left top, left bottom,
 	from(#1e3552),
@@ -50,11 +49,11 @@ body {
 	color-stop(0.50, #ffffff),
 	to(#152f42));
 	border:1px solid #000;
-	-webkit-box-shadow:0px 0px 13px rgba(000,000,000,1),inset 0px 0px 3px rgba(255,255,255,1);
-	text-shadow:0px -1px 0px rgba(000,000,000,0.2),0px 1px 0px rgba(255,255,255,1);
+	/*	-webkit-box-shadow:0px 0px 13px rgba(000,000,000,1),inset 0px 0px 3px rgba(255,255,255,1);*/
+	text-shadow:-2px -2px -2px rgba(000,000,000,0.2),2px 2px 2px rgba(255,255,255,1);
 }
-.ButtonDisabled {
-	font-style: italic;
+.buttonDisabled {
+	font-style:italic;
 	background:-webkit-gradient(
 	linear, left top, left bottom,
 	from(#333),
@@ -70,17 +69,18 @@ body {
  * Flash and sizzle stuff below. Effects, etc.
  *
  */
-@-webkit-keyframes GreenHighlightAnim {
+@-webkit-keyframes greenHighlightAnim {
 from {
-	-webkit-box-shadow:inset 0px 0px 30px #11ff22;
+	-webkit-box-shadow:inset 0px 0px 10px #11ff22;
 }
-50% { -webkit-box-shadow: 0px 0px 30px #11ff22; }
+50% { -webkit-box-shadow: 0px 0px 10px #11ff22; }
 to {
-	-webkit-box-shadow:inset 0px 0px 30px #11ff22;
+	-webkit-box-shadow:inset 0px 0px 10px #11ff22;
 }
-.GreenHighlight {
-	-webkit-animation-name:GreenHighlightAnim;
+}
+.greenHighlight {
+	-webkit-animation-name:greenHighlightAnim;
 	-webkit-animation-duration:1s;
 	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:ease-in-out;
+	/*	-webkit-animation-timing-function:ease-in-out;*/
 }

@@ -2,10 +2,13 @@
 <html>
 	<head>
 		<title></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="PGPT.css" type="text/css" />
 		<script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
+		<!-- Performance test specific javascripts included here. Add new tests below. -->
+		<script type="text/javascript" charset="utf-8" src="javascripts/starfieldCSS.js"></script>
+		<!-- End #include of performance test specific javasets. Add new tests above. -->
 		<script type="text/javascript">
 			function preventBehavior(e) {
 				e.preventDefault();
@@ -23,26 +26,54 @@
 		</script>
 	</head>
 	<body onload="onBodyLoad()">
-		<div class="BasicHeader">PhoneGap Perf Test</div>
-		<div>
-			<table id="MenuTable">
-				<tr>
-					<td><div class="ButtonDefault ButtonEnabled">Starfield - CSS</div></td>
-					<td><div class="ButtonDefault ButtonDisabled">...more to come...</div></td>
-				</tr>
-				<tr>
-					<td><div class="ButtonDefault ButtonDisabled">...more to come...</div></td>
-					<td><div class="ButtonDefault ButtonDisabled">...more to come...</div></td>
-				</tr>
-				<tr>
-					<td><div class="ButtonDefault ButtonDisabled">...more to come...</div></td>
-					<td><div class="ButtonDefault ButtonDisabled">...more to come...</div></td>
-				</tr>
-				<tr>
-					<td><div class="ButtonDefault ButtonDisabled">...more to come...</div></td>
-					<td><div class="ButtonDefault ButtonDisabled">...more to come...</div></td>
-				</tr>
-			</table>
+		<div id="mainMenuContainer">
+			<div class="basicHeader">
+				PhoneGap Perf Test
+			</div>
+			<div>
+				<table id="menuTable">
+					<tr>
+						<td>
+						<div class="buttonDefault buttonEnabled greenHighlight" onclick="InitStarfieldCSS()">
+							Starfield - CSS
+						</div></td>
+						<td>
+						<div class="buttonDefault buttonDisabled">
+							...more to come...
+						</div></td>
+					</tr>
+					<tr>
+						<td>
+						<div class="buttonDefault buttonDisabled">
+							...more to come...
+						</div></td>
+						<td>
+						<div class="buttonDefault buttonDisabled">
+							...more to come...
+						</div></td>
+					</tr>
+					<tr>
+						<td>
+						<div class="buttonDefault buttonDisabled">
+							...more to come...
+						</div></td>
+						<td>
+						<div class="buttonDefault buttonDisabled">
+							...more to come...
+						</div></td>
+					</tr>
+					<tr>
+						<td>
+						<div class="buttonDefault buttonDisabled">
+							...more to come...
+						</div></td>
+						<td>
+						<div class="buttonDefault buttonDisabled">
+							...more to come...
+						</div></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>
