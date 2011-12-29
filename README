@@ -1,0 +1,10 @@
+This project is meant to facilitate discussion about best practices for building games on PhoneGap.
+
+Its focus is to allow users to tweak and twiddle to see what changes affect performance the most, so we can make informed decisions in our architectures. It is specifically targetted at the creation of smoothly animated interactive games at (hopefully) native speeds.
+
+First batch of questions:
+- CSS transforms vs. manual handling of DOM (Image) objects
+- Impact of more sprites on screen
+- Impact of scaling
+- Impact of overdraw
+- Impact of translucent sprites
