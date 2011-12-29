@@ -1,0 +1,41 @@
+/* 
+ * Global container object, which does the clipping for us when viewing in a browser
+ */
+.frameContainer {
+	width: 478px;
+	height: 298px;
+	overflow: hidden;
+}
+
+/* Debug framerate display */
+.framerateDisplay {
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	width: 200px;
+	height: 40px;
+	-webkit-border-radius: 5px;
+	background: rgba(196,196,196,0.7);
+	z-index: 10;
+}
+/* The rear-most starfield */
+.movingStarfield {
+	-webkit-animation-name:movingStarfieldAnim;
+	-webkit-animation-duration:176s;
+	-webkit-animation-timing-function: linear;
+	/* According to my understanding, "forward" should suffice here, but that causes the
+	 * position to reset. "both" seems to achieve the desired result of having the animation hold
+	 * its last frame after the slide is done.
+	 */
+	-webkit-animation-fill-mode:both;
+	/* Sort this element behind everything else */
+	z-index: -10;
+}
+@-webkit-keyframes movingStarfieldAnim {
+from {
+margin-left: 0px
+}
+to {
+margin-left: -2000px
+}
+}
