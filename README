@@ -3,6 +3,7 @@ This project is meant to facilitate discussion about best practices for building
 Its focus is to allow users to tweak and twiddle to see what changes affect performance the most, so we can make informed decisions in our architectures. It is specifically targetted at the creation of smoothly animated interactive games at (hopefully) native speeds.
 
 First batch of questions:
+- Can an HTML/Javascript PhoneGa app create smooth scrolling performance at native speeds?
 - CSS transforms vs. manual handling of DOM (Image) objects
 - Impact of more sprites on screen
 - Impact of scaling
