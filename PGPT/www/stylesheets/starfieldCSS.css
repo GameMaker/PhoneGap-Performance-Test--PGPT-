@@ -1,0 +1,24 @@
+.frameContainer {
+	width: 478px;
+	height: 298px;
+	overflow: hidden;
+}
+
+.movingStarfield {
+	-webkit-animation-name:movingStarfieldAnim;
+	-webkit-animation-duration:176s;
+	-webkit-animation-timing-function: linear;
+	/* According to my understanding, "forward" should suffice here, but that causes the
+	 * position to reset. "both" seems to achieve the desired result of having the animation hold
+	 * its last frame after the slide is done.
+	 */
+	-webkit-animation-fill-mode:both;
+}
+@-webkit-keyframes movingStarfieldAnim {
+from {
+margin-left: 0px
+}
+to {
+margin-left: -2000px
+}
+}
