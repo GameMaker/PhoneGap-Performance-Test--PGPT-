@@ -1,0 +1,86 @@
+/* Global styles */
+body {
+	overflow:hidden;
+	background:#C9E9F3;
+	font-family:Arial,Helvetica,sans-serif;
+	/* Using non-retina iPhone-centric resolution for now.
+	 * The addition of a border makes the body visible when debugging / viewing in a browser.
+	 * Margin: auto centers it nicely in a browser
+	 * We remove 1 px from each side of the desired size of 480X300 to account for the border.
+	 * We remove 20 px from the y direction to account for the iOS system bar.
+	 */
+	border:1px solid black;
+	width:478px;
+	height:298px;
+	margin:auto;
+}
+/* Utility classes for buttons and other common features */
+.BasicHeader {
+	font-size:250%;
+	text-align: center;
+	font-weight: bolder;
+	font-variant:small-caps;
+}
+#MenuTable {
+	width:80%;
+	margin:auto;
+}
+#MenuTable td{
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.ButtonDefault {
+	font-size:100%;
+	color:#000000;
+	line-height:2.5;
+	text-align:center;
+	-webkit-border-radius:20px;
+	width:200px;
+	height:40px;
+}
+.ButtonEnabled {
+	font-weight: bold;
+	background:-webkit-gradient(
+	linear, left top, left bottom,
+	from(#1e3552),
+	color-stop(0.50, #c7f0ff),
+	color-stop(0.50, #ffffff),
+	to(#152f42));
+	border:1px solid #000;
+	-webkit-box-shadow:0px 0px 13px rgba(000,000,000,1),inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:0px -1px 0px rgba(000,000,000,0.2),0px 1px 0px rgba(255,255,255,1);
+}
+.ButtonDisabled {
+	font-style: italic;
+	background:-webkit-gradient(
+	linear, left top, left bottom,
+	from(#333),
+	color-stop(0.50, #ccc),
+	color-stop(0.50, #fff),
+	to(#222));
+	border:1px solid #000;
+	-webkit-box-shadow:0px 0px 13px rgba(000,000,000,1),inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:0px -1px 0px rgba(000,000,000,0.2),0px 1px 0px rgba(255,255,255,1);
+}
+/*
+ *
+ * Flash and sizzle stuff below. Effects, etc.
+ *
+ */
+@-webkit-keyframes GreenHighlightAnim {
+from {
+	-webkit-box-shadow:inset 0px 0px 30px #11ff22;
+}
+50% { -webkit-box-shadow: 0px 0px 30px #11ff22; }
+to {
+	-webkit-box-shadow:inset 0px 0px 30px #11ff22;
+}
+.GreenHighlight {
+	-webkit-animation-name:GreenHighlightAnim;
+	-webkit-animation-duration:1s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+}
