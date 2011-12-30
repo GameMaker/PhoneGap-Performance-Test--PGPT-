@@ -53,32 +53,72 @@ I used a SetInterval JS call to activate a framerate counter update, using an in
 <table border="1px solid black" align="center" width="80%">
 	<tr>
 		<td align="center" width="20%"><strong>Viewer</td>
-		<td align="center" width="10%"><strong>Avg. MS per Frame</td>
-		<td align="center" width="10%"><strong>Avg. Framerate</td>
+		<td align="center" width="20%"><strong>Avg. Framerate</td>
 		<td align="center" width="60%"><strong>Notes</td>
 	</tr>
 	<tr>
 		<td align="center">Chrome</td>
-		<td align="center">5</td>
 		<td align="center">200</td>
 		<td>Screamin...clearly we need to give it more to do.</td>
 	</tr>
 	<tr>
 		<td align="center">iPhone (5.0) Simulator</td>
-		<td align="center">5</td>
 		<td align="center">200</td>
 		<td>Looks like still no sweat</td>
 	</tr>
 	<tr>
 		<td align="center">iPad (5.0) Simulator</td>
-		<td align="center">5</td>
 		<td align="center">200</td>
 		<td>Same</td>
 	</tr>
 	<tr>
 		<td align="center">iPhone 4 (iOS 5.0.1)</td>
-		<td align="center">5</td>
 		<td align="center">200</td>
-		<td>Looks like still no sweat</td>
+		<td><strong>But wait...there's a problem</td>
 	</tr>
 </table>
+
+All looks well - but then I decided to add the ability to measure high/low framerate to see where the peaks and valleys took it.
+
+I also made a change so that the framerate display would only run at 10Hz, while the framerate measuring code would run as often as it could.
+
+The stuff on the MBP was mostly unaffected, but the iPhone started seeing huge swings in framerate:
+
+<table border="1px solid black" align="center" width="80%">
+	<tr>
+		<td align="center" width="15%"><strong>Viewer</td>
+		<td align="center" width="5%"><strong>High Framerate</td>
+		<td align="center" width="5%"><strong>Avg. Framerate</td>
+		<td align="center" width="5%"><strong>Low Framerate</td>
+		<td align="center" width="60%"><strong>Notes</td>
+	</tr>
+	<tr>
+		<td align="center">Chrome</td>
+		<td align="center">250</td>
+		<td align="center">200</td>
+		<td align="center">91</td>
+		<td>Screamin...clearly we need to give it more to do.</td>
+	</tr>
+	<tr>
+		<td align="center">iPhone (5.0) Simulator</td>
+		<td align="center">250</td>
+		<td align="center">200</td>
+		<td align="center">33</td>
+		<td>Looks like still no sweat</td>
+	</tr>
+	<tr>
+		<td align="center">iPad (5.0) Simulator</td>
+		<td align="center">250</td>
+		<td align="center">200</td>
+		<td align="center">32</td>
+		<td>Same</td>
+	</tr>
+	<tr>
+		<td align="center">iPhone 4 (iOS 5.0.1)</td>
+		<td align="center">Infinity</td>
+		<td align="center">100</td>
+		<td align="center">17</td>
+		<td><strong>Biggest change is that the average framerate has been cut in half</td>
+	</tr>
+</table>
+
