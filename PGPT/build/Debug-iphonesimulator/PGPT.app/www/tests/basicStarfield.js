@@ -36,16 +36,16 @@ function updateFramerateJS() {
 	updateFramerate();
 	/* Now we know how long the last frame took (frameDuration). We use that to move the
 	 * starfield the correct amount. frameDuration is the # of milliseconds since last update,
-	 * and we want to move it 30 px / sec, or 1 px / 33.3ms, or .03px/ms.
+	 * and we want to move it 10 px / sec, or 1 px / 100ms, or .01px/ms.
 	 * 
 	 */
-	clipFrameLeft += frameDuration * 0.03;
+	clipFrameLeft += frameDuration * 0.01;
 
 	/* 'scrolling' in this case requires two steps:
 	 * 1- move the object to the left
 	 * 2- move the clip window into the larger starfield by an equivalent amount
 	 */	
-	starfield.style.left = starfield.style.left.slice(0,-2) - (frameDuration * 0.03) + "px";
+	starfield.style.left = starfield.style.left.slice(0,-2) - (frameDuration * 0.01) + "px";
 	starfield.style.clip = "rect(0px " + (clipFrameLeft + 479) + "px 298px " + clipFrameLeft + "px)", bar=(300 - clipFrameLeft) + "px";
 }
 

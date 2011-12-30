@@ -30,8 +30,8 @@
 /* The rear-most starfield */
 .movingStarfield {
 	-webkit-animation-name: movingStarfieldAnim;
-	/* The starfield moves 3520 px, over 117 seconds, so it should move 30 px/sec. */
-	-webkit-animation-duration: 117.33s;
+	/* The starfield moves 3520 px, over 352 seconds, so it should move 10 px/sec. */
+	-webkit-animation-duration: 352s;
 	-webkit-animation-timing-function: linear;
 	/* According to my understanding, "forward" should suffice here, but that causes the
 	 * position to reset. "both" seems to achieve the desired result of having the animation hold
