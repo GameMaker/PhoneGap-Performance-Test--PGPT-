@@ -6,22 +6,26 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="PGPT.css" type="text/css" />
 		<script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
+		<script type="text/javascript" charset="utf-8" src="PGPT.js"></script>
 		<!-- Performance test specific javascripts included here. Add new tests below. -->
 		<script type="text/javascript" charset="utf-8" src="tests/basicStarfield.js"></script>
+		<script type="text/javascript" charset="utf-8" src="tests/parallaxStarfield.js"></script>
 		<!-- End #include of performance test specific javascripts. Add new tests above. -->
 		<!-- Performance test specific stylesheets included here. Add new tests below. -->
 		<link rel="stylesheet" href="tests/basicStarfield.css" type="text/css" />
+		<link rel="stylesheet" href="tests/parallaxStarfield.css" type="text/css" />
 		<!-- End #include of performance test specific stylesheets. Add new tests above. -->
 		<script type="text/javascript">
 			function preventBehavior(e) {
 				e.preventDefault();
-			};
+			}
 
 
 			document.addEventListener("touchmove", preventBehavior, false);
 
 			function onBodyLoad() {
 				document.addEventListener("deviceready", onDeviceReady, false);
+				initTestHarness();
 			}
 
 			function onDeviceReady() {
@@ -37,7 +41,7 @@
 				<table id="menuTable">
 					<tr>
 						<td>
-						<div class="buttonDefault buttonEnabled greenHighlight" onclick="initBasicStarfield()">
+						<div class="buttonDefault buttonEnabled" onclick="initBasicStarfield()">
 							Basic Starfield
 						</div></td>
 						<td>
@@ -47,7 +51,7 @@
 					</tr>
 					<tr>
 						<td>
-						<div class="buttonDefault buttonDisabled" onclick="initParallaxStarfield()">
+						<div class="buttonDefault buttonEnabled" onclick="initParallaxStarfield()">
 							Parallax Starfield
 						</div></td>
 						<td>
