@@ -45,7 +45,9 @@ function updateFramerateJS() {
 	 * 1- move the object to the left
 	 * 2- move the clip window into the larger starfield by an equivalent amount
 	 */	
-	starfield.style.left = starfield.style.left.slice(0,-2) - (frameDuration * 0.03) + "px";
+	/* need to adjust for browser size... */
+	starfield.style.left = (((window.innerWidth - 480) / 2) - (clipFrameLeft)) + "px";
+	// starfield.style.left = starfield.style.left.slice(0,-2) - (frameDuration * 0.03) + "px";
 	starfield.style.clip = "rect(0px " + (clipFrameLeft + 479) + "px 298px " + clipFrameLeft + "px)", bar=(300 - clipFrameLeft) + "px";
 }
 
@@ -144,7 +146,6 @@ function initStarfieldJS() {
 	/* Create a starfield background, and get it moving via a CSS Transform */
 	starfield = document.createElement("img");
 	starfield.style.zIndex = -10;
-	starfield.style.left = "0px";
 	starfield.style.position = "absolute";
 	starfield.style.clip="rect(0px 478px 298px 0px)";
 	clipFrameLeft = 0;
