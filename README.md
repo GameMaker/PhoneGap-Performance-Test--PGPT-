@@ -40,7 +40,7 @@ Since it's easy to add tests, I will try to create more, simpler tests, rather t
 Browser testing is done on a 2011 MacBook Pro, running Snow Leapard 10.6.8.
 
 ## RESULTS
-### TEST 1: SIMPLE SCROLLING STARFIELD
+### TEST 1: BASIC SCROLLING STARFIELD
 #### Process
 1. Draw a starfield as a background, like you might see in a side scroller.
 1. Try using a CSS animation (using -webkit-animation), measure performance.
@@ -122,3 +122,34 @@ The stuff on the MBP was mostly unaffected, but the iPhone started seeing huge s
 	</tr>
 </table>
 
+I have seen questionable performance with SetInterval / SetTimeout both in person and referenced on the web, so I'm calling that suspect #1.
+
+I rework the code from a dual-interval to a single, with a counter for updates to the display.
+
+<table border="1px solid black" align="center" width="80%">
+	<tr>
+		<td align="center" width="15%"><strong>Viewer</td>
+		<td align="center" width="5%"><strong>High Framerate</td>
+		<td align="center" width="5%"><strong>Avg. Framerate</td>
+		<td align="center" width="5%"><strong>Low Framerate</td>
+		<td align="center" width="60%"><strong>Notes</td>
+	</tr>
+	<tr>
+		<td align="center">Chrome</td>
+		<td align="center">Infinity</td>
+		<td align="center">Infinity</td>
+		<td align="center">200</td>
+		<td>Screamin...clearly we need to give it more to do.</td>
+	</tr>
+	<tr>
+		<td align="center">iPhone 4 (iOS 5.0.1)</td>
+		<td align="center">1000</td>
+		<td align="center">200</td>
+		<td align="center">29</td>
+		<td>Much better.</td>
+	</tr>
+</table>
+
+So having multiple intervals/timers is not a good idea.
+
+What if we keep the timing mechanism the same (setInterval(somefunc, 1)), but use JS to move the starfield instead of CSS?

@@ -16,6 +16,16 @@
 	-webkit-border-radius: 5px;
 	background: rgba(196,196,196,0.7);
 }
+/* Simple button for toggling features */
+.simpleToggleButton {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	line-height: 2.5em;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	background: rgba(196,196,255,0.5);
+}
 /* The rear-most starfield */
 .movingStarfield {
 	-webkit-animation-name: movingStarfieldAnim;
