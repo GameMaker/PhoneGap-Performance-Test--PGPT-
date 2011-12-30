@@ -153,3 +153,8 @@ I rework the code from a dual-interval to a single, with a counter for updates t
 So having multiple intervals/timers is not a good idea.
 
 What if we keep the timing mechanism the same (setInterval(somefunc, 1)), but use JS to move the starfield instead of CSS?
+
+After setting up a toggle button to switch between CSS and JS, I am not seeing a significant difference between the two. They're both seeing:
+* about 200-250 FPS (reasonable, since we're doing almost nothing)
+* Generally smooth movement
+* Framerate fluctuations as high as 15FPS - 1000FPS
