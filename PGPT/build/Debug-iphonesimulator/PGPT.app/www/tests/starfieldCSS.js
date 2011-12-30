@@ -32,20 +32,22 @@ function InitStarfieldCSS() {
 	frame.className = "frameContainer";
 	body.appendChild(frame);
 
+	/* Add a framerate display */
+	framerateDisplay = document.createElement("div");
+	framerateDisplay.className = "framerateDisplay";
+	framerateDisplay.style.zIndex = 10;
+	framerateDisplay.innerHTML = "FRAMERATE: ";
+	frame.appendChild(framerateDisplay);
+	
 	/* Create a starfield background, and get it moving via a CSS Transform */
 	starfield = document.createElement("img");
+	starfield.style.zIndex = -10;
 	starfield.className = "movingStarfield";
 	starfield.src = "media/images/starfield-actual.jpg";
 	frame.appendChild(starfield);
 
-	/* Add a framerate display */
-	framerateDisplay = document.createElement("div");
-	framerateDisplay.className = "framerateDisplay";
-	framerateDisplay.innerHTML = "FRAMERATE: ";
-	frame.appendChild(framerateDisplay);
-	
 	/* Turn on the framerate counter */
 	debugOn = true;
-	tickDuration = 300;
+	tickDuration = 1;
 	startFramerateUpdate();
 }
