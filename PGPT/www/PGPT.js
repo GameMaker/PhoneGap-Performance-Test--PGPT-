@@ -1,5 +1,5 @@
 /*global window: false, console: false, toggleMoveMode: false */
-var numOfStars, debugOn, body, clipFrameLeft, testFrame, starfield, modeButton, moveMode, framerateDisplay, framerateInterval, framerateLow, framerateHigh, framerateAvg, lastTick, tickDuration, framerateDisplayUpdateFrequency, framerateDisplayUpdateCounter, thisTick, frameDuration, currentFramerate;
+var jsUpdateCallback, numOfStars, debugOn, body, clipFrameLeft, testFrame, starfield, modeButton, moveMode, framerateDisplay, framerateInterval, framerateLow, framerateHigh, framerateAvg, lastTick, tickDuration, framerateDisplayUpdateFrequency, framerateDisplayUpdateCounter, thisTick, frameDuration, currentFramerate;
 
 /* Updates the framerate display - is called every tickDuration milliseconds via setInterval */
 function updateFramerateDisplay() {
@@ -50,6 +50,10 @@ function updateFramerateJS() {
 	starfield.style.left = (((window.innerWidth - 480) / 2) - (clipFrameLeft)) + "px";
 	// starfield.style.left = starfield.style.left.slice(0,-2) - (frameDuration * 0.03) + "px";
 	starfield.style.clip = "rect(0px " + (clipFrameLeft + 479) + "px 298px " + clipFrameLeft + "px)";
+
+	if(jsUpdateCallback) {
+		jsUpdateCallback();
+	}
 }
 
 /* Initialize the framerate reporting system and turn it on
@@ -74,7 +78,7 @@ function setUpUI() {
 
 	/* Add a button to toggle CSS / JS movement */
 	modeButton = document.createElement("div");
-	modeButton.className = "simpleToggleButton";
+	modeButton.className = "simpleToggleButton buttonEnabled";
 	modeButton.style.marginLeft = "300px";
 	modeButton.style.marginTop = "20px";
 	modeButton.innerHTML = "Move mode: " + moveMode;
@@ -95,7 +99,7 @@ function initStarfieldCSS() {
 
 	/* Create a starfield background, and get it moving via a CSS Transform */
 	starfield = document.createElement("img");
-	starfield.style.zIndex = -10;
+	starfield.style.zIndex = -1000;
 	/* This ended up being about the only difference between CSS and JS -
 	 * here in the CSS test, we use the CSS style with the webkit animation.
 	 */
@@ -126,8 +130,17 @@ function initStarfieldCSS() {
 }
 
 /* Set up the starfield using JavaScript. */
-function initStarfieldJS() {
+function initStarfieldJS(callback) {
 	// console.log("Initting JS");
+	/* If the test needs a callback every update, then we'll apply it, otherwise, leave it null */
+	if (callback)
+	{
+		jsUpdateCallback = callback;
+	}
+	else
+	{
+		jsUpdateCallback = null;
+	}
 	/* Create the background starfield */
 	/* First create a container that will do the clipping for us via overflow:hidden */
 	testFrame = document.createElement("div");
@@ -138,7 +151,7 @@ function initStarfieldJS() {
 
 	/* Create a starfield background, and get it moving via a CSS Transform */
 	starfield = document.createElement("img");
-	starfield.style.zIndex = -10;
+	starfield.style.zIndex = -1000;
 	starfield.style.position = "absolute";
 	starfield.style.clip = "rect(0px 478px 298px 0px)";
 	clipFrameLeft = 0;
@@ -208,6 +221,7 @@ function initTestHarness() {
 	 * I'm using 1 for now, so that we get the best possible reading.
 	 */
 	tickDuration = 1;
+	moveMode = "JS";
 
 	/* Counter is a temp variable. We will only update the framerate display every
 	 * framerateDisplayUpdateFrequency ticks of the framerate checking function.

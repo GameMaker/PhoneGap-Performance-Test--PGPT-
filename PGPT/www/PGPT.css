@@ -54,7 +54,7 @@ body {
 	font-variant: small-caps;
 }
 #menuTable {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 }
 #menuTable td {
@@ -63,15 +63,30 @@ body {
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
-/* Clickable one-shot button */
+#menuTable tr {
+	height: 50px;
+}
+/* Clickable one-shot button. To use, start with buttonDefault, and
+ * add one of buttonSmall, buttonMedium, buttonLarge, and
+ * one of buttonEnabled, buttonDisabled.
+ * */
 .buttonDefault {
 	font-size: 100%;
 	color: #000000;
 	line-height: 2.5;
 	text-align: center;
+	position: absolute;
 	-webkit-border-radius: 20px;
-	width: 200px;
 	height: 40px;
+}
+.buttonSmall {
+	width: 40px;
+}
+.buttonMedium {
+	width: 200px;
+}
+.buttonLarge {
+	width: 400px;
 }
 .buttonEnabled {
 	font-weight: bold;
@@ -141,4 +156,7 @@ to {
 	-webkit-animation-duration: 1s;
 	-webkit-animation-iteration-count: infinite;
 	/*	-webkit-animation-timing-function:ease-in-out;*/
+}
+.floatingSprite {
+	position: absolute;
 }
