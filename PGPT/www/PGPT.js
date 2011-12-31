@@ -1,5 +1,5 @@
-/*global window: false, console: false, toggleMoveMode: false */
-var jsUpdateCallback, numOfStars, debugOn, body, clipFrameLeft, testFrame, starfield, modeButton, moveMode, framerateDisplay, framerateInterval, framerateLow, framerateHigh, framerateAvg, lastTick, tickDuration, framerateDisplayUpdateFrequency, framerateDisplayUpdateCounter, thisTick, frameDuration, currentFramerate;
+/*global window: false, console: false, toggleMoveMode: false, toggleOpacityMode, false */
+var opacityButton, opacityMode, jsUpdateCallback, numOfStars, debugOn, body, clipFrameLeft, testFrame, starfield, modeButton, moveMode, framerateDisplay, framerateInterval, framerateLow, framerateHigh, framerateAvg, lastTick, tickDuration, framerateDisplayUpdateFrequency, framerateDisplayUpdateCounter, thisTick, frameDuration, currentFramerate;
 
 /* Updates the framerate display - is called every tickDuration milliseconds via setInterval */
 function updateFramerateDisplay() {
@@ -78,12 +78,19 @@ function setUpUI() {
 
 	/* Add a button to toggle CSS / JS movement */
 	modeButton = document.createElement("div");
-	modeButton.className = "simpleToggleButton buttonEnabled";
+	modeButton.className = "simpleToggleButton buttonDisabled";
 	modeButton.style.marginLeft = "300px";
-	modeButton.style.marginTop = "20px";
+	modeButton.style.marginTop = "10px";
 	modeButton.innerHTML = "Move mode: " + moveMode;
-	modeButton.onclick = toggleMoveMode;
 	testFrame.appendChild(modeButton);
+
+	/* Add a button to toggle opacity */
+	opacityButton = document.createElement("div");
+	opacityButton.className = "simpleToggleButton buttonDisabled";
+	opacityButton.style.marginLeft = "300px";
+	opacityButton.style.marginTop = "55px";
+	opacityButton.innerHTML = "Opacity: " + opacityMode;
+	testFrame.appendChild(opacityButton);
 }
 
 /* Set up the starfield using CSS. */
@@ -133,12 +140,9 @@ function initStarfieldCSS() {
 function initStarfieldJS(callback) {
 	// console.log("Initting JS");
 	/* If the test needs a callback every update, then we'll apply it, otherwise, leave it null */
-	if (callback)
-	{
+	if(callback) {
 		jsUpdateCallback = callback;
-	}
-	else
-	{
+	} else {
 		jsUpdateCallback = null;
 	}
 	/* Create the background starfield */
@@ -190,13 +194,16 @@ function clearStarfield() {
 	clearInterval(framerateInterval);
 }
 
-function toggleMoveMode() {
-	// console.log("Tapped on mode in mode " + moveMode);
+function toggleMoveMode(callback) {
 	switch (moveMode) {
 		case "CSS":
 			moveMode = "JS";
 			clearStarfield();
-			initStarfieldJS();
+			if(callback) {
+				initStarfieldJS(callback);
+			} else {
+				initStarfieldJS();
+			}
 			break;
 		case "JS":
 			moveMode = "CSS";
@@ -204,6 +211,11 @@ function toggleMoveMode() {
 			initStarfieldCSS();
 			break;
 	}
+}
+
+function toggleOpacityMode() {
+	opacityMode = !opacityMode;
+	opacityButton.innerHTML = "Opacity: " + opacityMode;
 }
 
 /* Get rid of the main menu */
@@ -222,6 +234,7 @@ function initTestHarness() {
 	 */
 	tickDuration = 1;
 	moveMode = "JS";
+	opacityMode = false;
 
 	/* Counter is a temp variable. We will only update the framerate display every
 	 * framerateDisplayUpdateFrequency ticks of the framerate checking function.
