@@ -110,11 +110,19 @@
 		</data>
 		<key>www/PGPT.css</key>
 		<data>
-		XBREbNB8JWvtPwyrJxeWYmDcWX8=
+		5DAcY+OlcBgdH2VWkeKDP4/sIyY=
+		</data>
+		<key>www/PGPT.js</key>
+		<data>
+		EXuEldE491PftBVXlv9QKCZMfc0=
 		</data>
 		<key>www/index.html</key>
 		<data>
-		IjOIWnxreucLvsG+QBcyIT78Nao=
+		qknfzNVvQWCc8+Q0Xdtj+bynCno=
+		</data>
+		<key>www/media/images/star.png</key>
+		<data>
+		bpnt61R9eOSVbyuu1xtCxOzuM1Q=
 		</data>
 		<key>www/media/images/starfield-actual.jpg</key>
 		<data>
@@ -134,11 +142,19 @@
 		</data>
 		<key>www/tests/basicStarfield.css</key>
 		<data>
-		PKmgpG52MbrutauE0Bq4T2lJSeI=
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>www/tests/basicStarfield.js</key>
 		<data>
-		JTZLbRGMTMgNPCGN4Jv7HppO1L8=
+		SqpH/ci3eFc2Spl5YT6IfC2wcnU=
+		</data>
+		<key>www/tests/parallaxStarfield.css</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
+		<key>www/tests/parallaxStarfield.js</key>
+		<data>
+		VUbAnP7vUoD2PYG1UqOnVYeFk2Y=
 		</data>
 	</dict>
 	<key>rules</key>

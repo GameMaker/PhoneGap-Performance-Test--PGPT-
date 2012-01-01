@@ -159,3 +159,15 @@ After setting up a toggle button to switch between CSS and JS, I am not seeing a
 * about 200-250 FPS (reasonable, since we're doing almost nothing)
 * Generally smooth movement - but NOT as smooth as native.
 * Framerate fluctuations as wild as 15FPS - 1000FPS
+
+##### My God, it's full of stars...
+
+Ok, so now it's time to turn up the heat. Next I implemented a Parallaxing Starfield test, which builds on the Basic Starfield test, above, which was essentially inconclusive as it failed to stress the machine enough to elicit a framerate drop. (Also, of course, it's barely a copmlete test. But we start somewhere...)
+
+The Parallaxing starfield test adds a suite of items to the UI, that allow the user to control the number of parallaxing stars that are drawn over the moving background.
+
+The user can add or remove 1, 10, or 100 stars at a time.
+
+Also, there is a new "use Opacity" toggle button. When off, all stars are drawn at 100% opacity. If on, stars become more translucent the further they are from the camera. I wanted to use this to test the effect of opacity on framerate.
+
+Finally, I was concerned about the cost of scaling, so there is a similar "use scaling" toggle button that draws all stars at the same size (off) or scales them down if further away (on);

@@ -1,86 +1,162 @@
-/* Global styles */
+/* Global or shared styles */
 body {
-	overflow:hidden;
-	background:#C9E9F3;
-	font-family:Arial,Helvetica,sans-serif;
+	overflow: hidden;
+	background: #C9E9F3;
+	font-family: Arial, Helvetica, sans-serif;
 	/* Using non-retina iPhone-centric resolution for now.
 	 * The addition of a border makes the body visible when debugging / viewing in a browser.
 	 * Margin: auto centers it nicely in a browser
 	 * We remove 1 px from each side of the desired size of 480X300 to account for the border.
 	 * We remove 20 px from the y direction to account for the iOS system bar.
 	 */
-	border:1px solid black;
-	width:478px;
-	height:298px;
-	margin:auto;
+	border: 1px solid black;
+	width: 478px;
+	height: 298px;
+	margin: auto;
 }
-/* Utility classes for buttons and other common features */
+/*
+ * Utility classes for buttons and other common features
+ */
+
+/*
+ * Global container object, which does the clipping for us when viewing in a browser
+ */
+.frameContainer {
+	width: 478px;
+	height: 298px;
+	margin: auto;
+	overflow: hidden;
+}
+/* Debug framerate display */
+.framerateDisplay {
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	-webkit-border-radius: 5px;
+	background: rgba(196,196,196,0.7);
+}
+/* Simple button for toggling features */
+.simpleToggleButton {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	line-height: 2.5em;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	background: rgba(196,196,255,0.5);
+}
 .basicHeader {
-	font-size:250%;
-	text-align:center;
-	font-weight:bolder;
-	font-variant:small-caps;
+	font-size: 250%;
+	text-align: center;
+	font-weight: bolder;
+	font-variant: small-caps;
 }
 #menuTable {
-	width:80%;
-	margin:auto;
+	width: 90%;
+	margin: auto;
 }
 #menuTable td {
-	padding-left:1%;
-	padding-right:1%;
-	padding-top:2%;
-	padding-bottom:2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
+#menuTable tr {
+	height: 50px;
+}
+/* Clickable one-shot button. To use, start with buttonDefault, and
+ * add one of buttonSmall, buttonMedium, buttonLarge, and
+ * one of buttonEnabled, buttonDisabled.
+ * */
 .buttonDefault {
-	font-size:100%;
-	color:#000000;
-	line-height:2.5;
-	text-align:center;
-	-webkit-border-radius:20px;
-	width:200px;
-	height:40px;
+	font-size: 100%;
+	color: #000000;
+	line-height: 2.5;
+	text-align: center;
+	position: absolute;
+	-webkit-border-radius: 20px;
+	height: 40px;
+}
+.buttonSmall {
+	width: 40px;
+}
+.buttonMedium {
+	width: 200px;
+}
+.buttonLarge {
+	width: 400px;
 }
 .buttonEnabled {
-	font-weight:bold;
-	background:-webkit-gradient(
+	font-weight: bold;
+	background: -webkit-gradient(
 	linear, left top, left bottom,
 	from(#1e3552),
 	color-stop(0.50, #c7f0ff),
 	color-stop(0.50, #ffffff),
 	to(#152f42));
-	border:1px solid #000;
+	border: 1px solid #000;
 	/*	-webkit-box-shadow:0px 0px 13px rgba(000,000,000,1),inset 0px 0px 3px rgba(255,255,255,1);*/
-	text-shadow:-2px -2px -2px rgba(000,000,000,0.2),2px 2px 2px rgba(255,255,255,1);
+	text-shadow: -2px -2px -2px rgba(000,000,000,0.2), 2px 2px 2px rgba(255,255,255,1);
 }
 .buttonDisabled {
-	font-style:italic;
-	background:-webkit-gradient(
+	font-style: italic;
+	background: -webkit-gradient(
 	linear, left top, left bottom,
 	from(#333),
 	color-stop(0.50, #ccc),
 	color-stop(0.50, #fff),
 	to(#222));
-	border:1px solid #000;
-	-webkit-box-shadow:0px 0px 13px rgba(000,000,000,1),inset 0px 0px 3px rgba(255,255,255,1);
-	text-shadow:0px -1px 0px rgba(000,000,000,0.2),0px 1px 0px rgba(255,255,255,1);
+	border: 1px solid #000;
+	-webkit-box-shadow: 0px 0px 13px rgba(000,000,000,1), inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.2), 0px 1px 0px rgba(255,255,255,1);
 }
+/*
+ * Features common to more than one test
+ */
+/* The rear-most starfield */
+.movingStarfield {
+	-webkit-animation-name: movingStarfieldAnim;
+	/* The starfield moves 3520 px, over 117 seconds, so it should move 30 px/sec. */
+	-webkit-animation-duration: 117.33s;
+	-webkit-animation-timing-function: linear;
+	/* According to my understanding, "forward" should suffice here, but that causes the
+	 * position to reset. "both" seems to achieve the desired result of having the animation hold
+	 * its last frame after the slide is done.
+	 */
+	-webkit-animation-fill-mode: both;
+}
+@-webkit-keyframes movingStarfieldAnim {
+from {
+	margin-left: 0px
+}
+to {
+	/* The starfield is 4000 px wide, and the screen is 480, so we move it by the difference */
+	margin-left: -3520px
+}
+}
+
 /*
  *
  * Flash and sizzle stuff below. Effects, etc.
  *
  */
-@-webkit-keyframes greenHighlightAnim {
-from {
-	-webkit-box-shadow:inset 0px 0px 10px #11ff22;
+@-webkit-keyframes
+greenHighlightAnim {from {
+	-webkit-box-shadow: inset 0px 0px 10px #11ff22;
 }
 50% { -webkit-box-shadow: 0px 0px 10px #11ff22; }
 to {
-	-webkit-box-shadow:inset 0px 0px 10px #11ff22;
+	-webkit-box-shadow: inset 0px 0px 10px #11ff22;
 }
 }
 .greenHighlight {
-	-webkit-animation-name:greenHighlightAnim;
-	-webkit-animation-duration:1s;
-	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-name: greenHighlightAnim;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
 	/*	-webkit-animation-timing-function:ease-in-out;*/
+}
+.floatingSprite {
+	position: absolute;
 }
