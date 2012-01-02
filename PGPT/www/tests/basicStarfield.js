@@ -13,5 +13,4 @@ function initBasicStarfield() {
 
 	modeButton.onclick = toggleBasicMode;
 	modeButton.className = "simpleToggleButton buttonEnabled";
-
 }

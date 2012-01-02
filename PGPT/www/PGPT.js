@@ -1,9 +1,23 @@
-/*global window: false, console: false, toggleMoveMode: false, toggleOpacityMode, false */
-var opacityButton, opacityMode, jsUpdateCallback, numOfStars, debugOn, body, clipFrameLeft, testFrame, starfield, modeButton, moveMode, framerateDisplay, framerateInterval, framerateLow, framerateHigh, framerateAvg, lastTick, tickDuration, framerateDisplayUpdateFrequency, framerateDisplayUpdateCounter, thisTick, frameDuration, currentFramerate;
+/*global window: false, console: false, toggleMoveMode: false, toggleOpacityMode: false */
+
+var now, lastlog, framerateArray, opacityButton, opacityMode, scalingButton, scalingMode, jsUpdateCallback, numOfStars, debugOn, body, clipFrameLeft, testFrame, starfield, modeButton, moveMode, framerateDisplay, framerateInterval, framerateLow, framerateHigh, framerateAvg, lastTick, tickDuration, framerateDisplayUpdateFrequency, framerateDisplayUpdateCounter, thisTick, frameDuration, currentFramerate;
+
+function log (msg) {
+	 now = new Date().getTime().toString().substr(8,15);
+	 console.log(now + " (" + (now - lastlog) + "): " + msg);
+	 lastlog = now;
+}
 
 /* Updates the framerate display - is called every tickDuration milliseconds via setInterval */
 function updateFramerateDisplay() {
-	framerateDisplay.innerHTML = "Time since last tick: " + frameDuration + "<br>Framerate: " + currentFramerate + "<br>High Framerate: " + framerateHigh + "<br>Low framerate: " + framerateLow;
+	var avg = 0;
+	for (var i = 0; i < framerateArray.length; i++)
+	{
+		avg += framerateArray[i];
+	}
+	avg = avg / framerateArray.length;
+	framerateDisplay.innerHTML = "Time: " + (new Date().getTime()) + "<br>Time since last tick: " + frameDuration + "<br>Framerate: " + currentFramerate + "<br>Avg (" + framerateArray.length + ") Framerate: " + Math.round(avg) + "<br>High Framerate: " + framerateHigh + "<br>Low framerate: " + framerateLow;
+	log("Updated Framerate Display:\nTime: " + (new Date().getTime()) + "\nTime since last tick: " + frameDuration + "\nFramerate: " + currentFramerate + "\nAvg (" + framerateArray.length + ") Framerate: " + Math.round(avg) + "\nHigh Framerate: " + framerateHigh + "\nLow framerate: " + framerateLow);
 }
 
 /* Calculate and track the current performance. Does NOT update the onscreen readout,
@@ -19,9 +33,11 @@ function updateFramerate() {
 	if(currentFramerate < framerateLow) {
 		framerateLow = currentFramerate;
 	}
+	framerateArray.shift();
+	framerateArray.push(currentFramerate);
 	if(debugOn) {
-		framerateDisplayUpdateCounter += 1;
-		if(framerateDisplayUpdateCounter === framerateDisplayUpdateFrequency) {
+		framerateDisplayUpdateCounter += frameDuration;
+		if(framerateDisplayUpdateCounter >= framerateDisplayUpdateFrequency) {
 			framerateDisplayUpdateCounter = 0;
 			updateFramerateDisplay();
 		}
@@ -34,7 +50,9 @@ function updateFramerateJS() {
 	 * the correct amount. This should produce an even velocity of starfield movement, even
 	 * if the framerate drops.
 	 */
+	log("Entering updateFramerateJS");
 	updateFramerate();
+	log("Just updated framerate. Dur = " + frameDuration + " CFR: " + currentFramerate);
 	/* Now we know how long the last frame took (frameDuration). We use that to move the
 	 * starfield the correct amount. frameDuration is the # of milliseconds since last update,
 	 * and we want to move it 30 px / sec, or 1 px / 33.3ms, or .03px/ms.
@@ -42,7 +60,7 @@ function updateFramerateJS() {
 	 */
 	clipFrameLeft += frameDuration * 0.03;
 
-	/* 'scrolling' in this case requires two steps:
+	/* 'scrolling' in JS requires two steps:
 	 * 1- move the object to the left
 	 * 2- move the clip window into the larger starfield by an equivalent amount
 	 */
@@ -53,7 +71,10 @@ function updateFramerateJS() {
 
 	if(jsUpdateCallback) {
 		jsUpdateCallback();
+		log("       And drew a frame, too");
 	}
+	setTimeout(updateFramerateJS, 0);
+	log("Leaving updateFramerateJS");
 }
 
 /* Initialize the framerate reporting system and turn it on
@@ -66,6 +87,18 @@ function startFramerateDisplayUpdate() {
  Not currently used. */
 function stopFramerateDisplayUpdate() {
 	debugOn = false;
+}
+
+function seedFramerateArray() {
+	/* Initializes the array that we'll use for a rolling average of the most
+	 * recent 10 frames. We're going to use shift() and pop() exclusively, so
+	 * we need to set the array to the desired length before use, which is
+	 * what this function does.
+	 */
+	framerateArray=[];
+	for(var i = 0; i < 60; i++) {
+		framerateArray.push(0);
+	}
 }
 
 function setUpUI() {
@@ -91,6 +124,14 @@ function setUpUI() {
 	opacityButton.style.marginTop = "55px";
 	opacityButton.innerHTML = "Opacity: " + opacityMode;
 	testFrame.appendChild(opacityButton);
+
+	/* Add a button to toggle opacity */
+	scalingButton = document.createElement("div");
+	scalingButton.className = "simpleToggleButton buttonDisabled";
+	scalingButton.style.marginLeft = "300px";
+	scalingButton.style.marginTop = "100px";
+	scalingButton.innerHTML = "Scaling: " + scalingMode;
+	testFrame.appendChild(scalingButton);
 }
 
 /* Set up the starfield using CSS. */
@@ -128,11 +169,7 @@ function initStarfieldCSS() {
 		framerateLow = 100000;
 		startFramerateDisplayUpdate();
 	}, 1000);
-	/* Counter is a temp variable. We will only update the framerate display every
-	 * framerateDisplayUpdateFrequency ticks of the framerate checking function.
-	 */
-	framerateDisplayUpdateCounter = 0;
-	framerateDisplayUpdateFrequency = 100;
+	seedFramerateArray();
 	framerateInterval = setInterval(updateFramerate, tickDuration);
 }
 
@@ -170,7 +207,7 @@ function initStarfieldJS(callback) {
 	/* TickDuration holds the # of milliseconds before we will attempt to check framerate again.
 	 * I'm using 1 for now, so that we get the best possible reading.
 	 */
-	tickDuration = 1;
+	tickDuration = 100;
 	/* Hack - I'm concerned that if we start measuring the max/min framerate right away, we will get
 	 * spurious readings during initialization. So I'm going to re-set the high and low once we're underway,
 	 * (1 second in) which should give us a better reading of high/lows during execution only.
@@ -180,12 +217,9 @@ function initStarfieldJS(callback) {
 		framerateLow = 100000;
 		startFramerateDisplayUpdate();
 	}, 1000);
-	/* Counter is a temp variable. We will only update the framerate display every
-	 * framerateDisplayUpdateFrequency ticks of the framerate checking function.
-	 */
-	framerateDisplayUpdateCounter = 0;
-	framerateDisplayUpdateFrequency = 100;
-	framerateInterval = setInterval(updateFramerateJS, tickDuration);
+	seedFramerateArray();
+	// framerateInterval = setInterval(updateFramerateJS, tickDuration);
+	updateFramerateJS();
 }
 
 /* Ditch the old one before we set up the next test */
@@ -218,6 +252,12 @@ function toggleOpacityMode() {
 	opacityButton.innerHTML = "Opacity: " + opacityMode;
 }
 
+function toggleScalingMode() {
+	console.log("Click on scaling, it's " + scalingMode);
+	scalingMode = !scalingMode;
+	scalingButton.innerHTML = "Scaling: " + scalingMode;
+}
+
 /* Get rid of the main menu */
 function clearMainMenu() {
 	var theMainMenu;
@@ -235,7 +275,7 @@ function initTestHarness() {
 	tickDuration = 1;
 	moveMode = "JS";
 	opacityMode = false;
-
+	scalingMode = true;
 	/* Counter is a temp variable. We will only update the framerate display every
 	 * framerateDisplayUpdateFrequency ticks of the framerate checking function.
 	 */

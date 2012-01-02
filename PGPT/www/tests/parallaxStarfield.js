@@ -1,7 +1,7 @@
 /*global body: true, lastTick: true, tickDuration: true, framerateDisplayUpdateCounter: true, framerateDisplayUpdateFrequency: true, moveMode: true,
  initStarfieldJS: true, numOfStars: true, clearMainMenu: false, window: false, console: false, frameDuration: false, testFrame: false,
  opacityButton: true, toggleOpacityMode: false, opacityMode: false, addStarUI: false, toggleMoveMode: false, modeButton: true,
- updateParallaxStars: false */
+ updateParallaxStars: false, scalingButton: true, toggleScaling: true, toggleScalingMode: false, scalingMode: false*/
 
 var addStarButton, add10StarsButton, add100StarsButton, removeStarButton, remove10StarsButton, remove100StarsButton, starCountDisplay, starlist;
 
@@ -12,8 +12,10 @@ function resetStar(star) {
 	 */
 	size = Math.floor((Math.random() * 99) + 1);
 	star.style.zIndex = size * -1;
-	star.style.height = 0.96 * size + "px";
-	star.style.width = 0.96 * size + "px";
+	if(scalingMode) {
+		star.style.height = 0.96 * size + "px";
+		star.style.width = 0.96 * size + "px";
+	}
 	star.style.marginLeft = "480px";
 	/* This probably allows some percentage of stars to be generated offscreen. Whatevs. */
 	star.style.marginTop = -50 + Math.random() * 300 + "px";
@@ -60,10 +62,26 @@ function toggleOpacity() {
 	}
 }
 
+function toggleScaling() {
+	var i = 0;
+
+	toggleScalingMode();
+
+	while(i < starlist.length) {
+		if(scalingMode) {
+			starlist[i].style.height = -0.96 * starlist[i].style.zIndex + "px";
+			starlist[i].style.width = -0.96 * starlist[i].style.zIndex + "px";
+		} else {
+			starlist[i].style.height = "96px";
+			starlist[i].style.width = "96px";
+		}
+		i++;
+	}
+}
+
 function removeAllStars() {
 	var temp;
-	while (starlist.length)
-	{
+	while(starlist.length) {
 		temp = starlist.pop();
 		temp.parentNode.removeChild(temp);
 	}
@@ -160,10 +178,14 @@ function addStarUI() {
 	/* Overload the toggle buttons to point to test-specific stuff */
 	modeButton.onclick = toggleMode;
 	modeButton.className = "simpleToggleButton buttonEnabled";
-	
+
 	/* Also need to enable the toggle opacity UI button */
 	opacityButton.className = "simpleToggleButton buttonEnabled";
 	opacityButton.onclick = toggleOpacity;
+
+	/* Also need to enable the toggle scale UI button */
+	scalingButton.className = "simpleToggleButton buttonEnabled";
+	scalingButton.onclick = toggleScaling;
 }
 
 function updateParallaxStars() {
@@ -172,7 +194,7 @@ function updateParallaxStars() {
 		// First, we determine the star's horizontal position by stripping off the 'px' from it's location:
 		starPosition = starlist[i].style.marginLeft.slice(0, -2);
 		// then move it...and remember that zIndex is a negative, which is why we get movement to the left!
-		starVelocity = Math.pow((0.006 * starlist[i].style.zIndex), 2) * frameDuration;
+		starVelocity = (-0.006 * starlist[i].style.zIndex) * frameDuration;
 		starlist[i].style.marginLeft = starPosition - starVelocity + "px";
 		// then check and see if it's offscreen.
 		if(starPosition < -50) {
