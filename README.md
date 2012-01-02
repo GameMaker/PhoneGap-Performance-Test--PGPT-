@@ -252,8 +252,8 @@ With those in place, I tried the Parallax Starfield test again, and saw:
 </table>
 
 ##### Notes
-* Interestingly, turning scaling on effectively INCREASED the framerate in Chrome. This is because the scaling in this test scales sprites _down_ dramatically, which greatly reduces the number of pixels to draw. This offset more than compensated for the computational overhead of scaling the sprite. If ther sprites were scaled _up_, I imagine that the performance would have suffered doubly - once for the scaling overhead, and again because you're drawing more pixels.
-** There were two cases in which the iPhone reported very different results from what was being displayed onscreen. Turning scaling on was the controlling factor. I am not sure what mechanism is causing the huge difference in reported vs. observed framerate, but my guess is that when the browser becomes overloaded, it drops frames and goes back to the top of the update loop. In other words, you're not guaranteed to get a screen refresh before updateFramerate() is called again.
+ * Interestingly, turning scaling on effectively INCREASED the framerate in Chrome. This is because the scaling in this test scales sprites _down_ dramatically, which greatly reduces the number of pixels to draw. This offset more than compensated for the computational overhead of scaling the sprite. If ther sprites were scaled _up_, I imagine that the performance would have suffered doubly - once for the scaling overhead, and again because you're drawing more pixels.
+ ** There were two cases in which the iPhone reported very different results from what was being displayed onscreen. Turning scaling on was the controlling factor. I am not sure what mechanism is causing the huge difference in reported vs. observed framerate, but my guess is that when the browser becomes overloaded, it drops frames and goes back to the top of the update loop. In other words, you're not guaranteed to get a screen refresh before updateFramerate() is called again.
 
 So now I'm running into major snags. Running a test with 100 stars (a fairly heavy load, to be sure, but not unreasonable in a game with particles etc.).
 
