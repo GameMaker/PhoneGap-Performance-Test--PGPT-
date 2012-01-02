@@ -266,13 +266,12 @@ The call to update the framerate was originally started via a setInterval(update
 
 The issue became clear when I put in some code like this:
 
-'
-function updateFramerate() {
-	log("entering update loop");
-	<update the framerate and draw the stars>
-	log("leaving update loop");
-}
-'
+	function updateFramerate() {
+		log("entering update loop");
+		<update the framerate and draw the stars>
+		log("leaving update loop");
+	}
+
 
 Remember, though, updateFramerate is supposed to be called every 1 ms - so there should be almost no time at all between the "leaving" and "entering" messages. I was expecting to see them almost on top of each other.
 
@@ -280,17 +279,17 @@ Instead, with 100 stars, using scaling and opacity, I was seeing delays of as mu
 
 I started to have my doubts about setInterval, especially when the phone is under heavy load, so I removed the setInterval and restructured it like this:
 
-'
-function updateFramerate() {
-	log("entering update loop");
-	<update the framerate and draw the stars>
-	
-	// NEW - call yourself instantly, but let this instance exit
-	setTimeout(updateFramerate, 0);
 
-	log("leaving update loop");
-}
-'
+	function updateFramerate() {
+		log("entering update loop");
+		<update the framerate and draw the stars>
+		
+		// NEW - call yourself instantly, but let this instance exit
+		setTimeout(updateFramerate, 0);
+	
+		log("leaving update loop");
+	}
+
 
 That made a huge improvement in the number of times updateFramerate was called, and got rid of the 800+ms pauses - but there is still a consistent 30-50ms between one 'exit' and the next 'enter' message - system overhead? That's still a big question mark.
 
