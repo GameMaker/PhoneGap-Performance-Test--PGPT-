@@ -252,8 +252,9 @@ With those in place, I tried the Parallax Starfield test again, and saw:
 </table>
 
 ##### Notes
- * Interestingly, turning scaling on effectively INCREASED the framerate in Chrome. This is because the scaling in this test scales sprites _down_ dramatically, which greatly reduces the number of pixels to draw. This offset more than compensated for the computational overhead of scaling the sprite. If ther sprites were scaled _up_, I imagine that the performance would have suffered doubly - once for the scaling overhead, and again because you're drawing more pixels.
- ** There were two cases in which the iPhone reported very different results from what was being displayed onscreen. Turning scaling on was the controlling factor. I am not sure what mechanism is causing the huge difference in reported vs. observed framerate, but my guess is that when the browser becomes overloaded, it drops frames and goes back to the top of the update loop. In other words, you're not guaranteed to get a screen refresh before updateFramerate() is called again.
+\* Interestingly, turning scaling on effectively INCREASED the framerate in Chrome. This is because the scaling in this test scales sprites _down_ dramatically, which greatly reduces the number of pixels to draw. This offset more than compensated for the computational overhead of scaling the sprite. If ther sprites were scaled _up_, I imagine that the performance would have suffered doubly - once for the scaling overhead, and again because you're drawing more pixels.
+
+\** There were two cases in which the iPhone reported very different results from what was being displayed onscreen. Turning scaling on was the controlling factor. I am not sure what mechanism is causing the huge difference in reported vs. observed framerate, but my guess is that when the browser becomes overloaded, it drops frames and goes back to the top of the update loop. In other words, you're not guaranteed to get a screen refresh before updateFramerate() is called again.
 
 So now I'm running into major snags. Running a test with 100 stars (a fairly heavy load, to be sure, but not unreasonable in a game with particles etc.).
 
@@ -265,13 +266,13 @@ The call to update the framerate was originally started via a setInterval(update
 
 The issue became clear when I put in some code like this:
 
-<code>
+'
 function updateFramerate() {
 	log("entering update loop");
 	<update the framerate and draw the stars>
 	log("leaving update loop");
 }
-</code>
+'
 
 Remember, though, updateFramerate is supposed to be called every 1 ms - so there should be almost no time at all between the "leaving" and "entering" messages. I was expecting to see them almost on top of each other.
 
@@ -279,7 +280,7 @@ Instead, with 100 stars, using scaling and opacity, I was seeing delays of as mu
 
 I started to have my doubts about setInterval, especially when the phone is under heavy load, so I removed the setInterval and restructured it like this:
 
-<code>
+'
 function updateFramerate() {
 	log("entering update loop");
 	<update the framerate and draw the stars>
@@ -289,7 +290,7 @@ function updateFramerate() {
 
 	log("leaving update loop");
 }
-</code>
+'
 
 That made a huge improvement in the number of times updateFramerate was called, and got rid of the 800+ms pauses - but there is still a consistent 30-50ms between one 'exit' and the next 'enter' message - system overhead? That's still a big question mark.
 
