@@ -1,11 +1,11 @@
 /*global body: true, lastTick: true, tickDuration: true, framerateDisplayUpdateCounter: true, framerateDisplayUpdateFrequency: true, moveMode: true,
  initStarfieldJS: true, numOfStars: true, clearMainMenu: false, window: false, console: false, frameDuration: false, testFrame: false,
  opacityButton: true, toggleOpacityMode: false, opacityMode: false, addStarUI: false, toggleMoveMode: false, modeButton: true,
- updateParallaxStars: false, scalingButton: true, toggleScaling: true, toggleScalingMode: false, scalingMode: false */
+ updateParallaxStars: false, scalingButton: true, toggleScaling: true, toggleScalingMode: false, scalingMode: false*/
 
-var topPadding, addStarButton, add10StarsButton, add100StarsButton, removeStarButton, remove10StarsButton, remove100StarsButton, starCountDisplay, starlist;
+var addStarButton, add10StarsButton, add100StarsButton, removeStarButton, remove10StarsButton, remove100StarsButton, starCountDisplay, starlist;
 
-function resetStarJS(star) {
+function resetStar(star) {
 	var size;
 	/* We're going to overload the zIndex - smaller stars are farther away, so we'll use zIndex in
 	 * the update function to determine how much to move the star as well.
@@ -18,18 +18,18 @@ function resetStarJS(star) {
 	}
 	star.style.marginLeft = "480px";
 	/* This probably allows some percentage of stars to be generated offscreen. Whatevs. */
-	star.style.marginTop = topPadding - 50 + Math.random() * 300 + "px";
+	star.style.marginTop = -50 + Math.random() * 300 + "px";
 	if(opacityMode) {
 		star.style.opacity = size / 100;
 	}
 }
 
-function addStarJS() {
+function addStar() {
 	var newStar = document.createElement("img");
 	newStar.src = "media/images/star.png";
 	newStar.className = "floatingSprite";
-	resetStarJS(newStar);
-	// console.log("Adding star size " + newStar.style.zIndex * -1 + " at " + newStar.style.marginLeft + ", " + newStar.style.marginTop);
+	resetStar(newStar);
+	console.log("Adding star size " + newStar.style.zIndex * -1 + " at " + newStar.style.marginLeft + ", " + newStar.style.marginTop);
 	testFrame.appendChild(newStar);
 
 	starlist.push(newStar);
@@ -89,24 +89,7 @@ function removeAllStars() {
 
 function toggleMode() {
 	removeAllStars();
-	/* The page is 'flow'ed differently if you're using CSS vs. JS for placement.
-	 * The buttons are shown AFTER (i.e. below) the starfield in CSS mode, but
-	 * directly on top of the starfield in JS mode. In other words, a Y coordinate
-	 * of "0" means "top of the screen" in JS mode, but "after the last element"
-	 * or "bottom of the screen" in CSS mode. So we need to choose our marginTop
-	 * padding appropriately. This needs to be global as it will also be used
-	 * during star generation.
-	 */
-	switch (moveMode) {
-		case "JS":
-			toggleMoveMode();
-			topPadding = -302;
-			break;
-		case "CSS":
-			toggleMoveMode(updateParallaxStars);
-			topPadding = 0;
-			break;
-	}
+	toggleMoveMode(updateParallaxStars);
 	addStarUI();
 }
 
@@ -116,9 +99,8 @@ function addStarUI() {
 	remove100StarsButton = document.createElement("div");
 	remove100StarsButton.className = "buttonDefault buttonSmall buttonEnabled";
 	remove100StarsButton.style.marginLeft = "5px";
-	remove100StarsButton.style.marginTop = (topPadding + 250) + "px";
+	remove100StarsButton.style.marginTop = "250px";
 	remove100StarsButton.innerHTML = "-100";
-	// remove100StarsButton.position = "absolute";
 	remove100StarsButton.onclick = function() {
 		var i;
 		for( i = 0; i < 100; i++) {
@@ -132,7 +114,7 @@ function addStarUI() {
 	remove10StarsButton = document.createElement("div");
 	remove10StarsButton.className = "buttonDefault buttonSmall buttonEnabled";
 	remove10StarsButton.style.marginLeft = "50px";
-	remove10StarsButton.style.marginTop = (topPadding + 250) + "px";
+	remove10StarsButton.style.marginTop = "250px";
 	remove10StarsButton.innerHTML = "-10";
 	remove10StarsButton.onclick = function() {
 		var i;
@@ -147,7 +129,7 @@ function addStarUI() {
 	removeStarButton = document.createElement("div");
 	removeStarButton.className = "buttonDefault buttonSmall buttonEnabled";
 	removeStarButton.style.marginLeft = "95px";
-	removeStarButton.style.marginTop = (topPadding + 250) + "px";
+	removeStarButton.style.marginTop = "250px";
 	removeStarButton.innerHTML = "-";
 	removeStarButton.onclick = removeStar;
 	testFrame.appendChild(removeStarButton);
@@ -155,27 +137,27 @@ function addStarUI() {
 	starCountDisplay = document.createElement("div");
 	starCountDisplay.className = "buttonDefault buttonMedium buttonDisabled";
 	starCountDisplay.style.marginLeft = "140px";
-	starCountDisplay.style.marginTop = (topPadding + 250) + "px";
+	starCountDisplay.style.marginTop = "250px";
 	starCountDisplay.innerHTML = "# Stars: " + numOfStars;
 	testFrame.appendChild(starCountDisplay);
 	/* Button to add a star */
 	addStarButton = document.createElement("div");
 	addStarButton.className = "buttonDefault buttonSmall buttonEnabled";
 	addStarButton.style.marginLeft = "345px";
-	addStarButton.style.marginTop = (topPadding + 250) + "px";
+	addStarButton.style.marginTop = "250px";
 	addStarButton.innerHTML = "+";
-	addStarButton.onclick = addStarJS;
+	addStarButton.onclick = addStar;
 	testFrame.appendChild(addStarButton);
 	/* Button to add 10 star */
 	add10StarsButton = document.createElement("div");
 	add10StarsButton.className = "buttonDefault buttonSmall buttonEnabled";
 	add10StarsButton.style.marginLeft = "390px";
-	add10StarsButton.style.marginTop = (topPadding + 250) + "px";
+	add10StarsButton.style.marginTop = "250px";
 	add10StarsButton.innerHTML = "+10";
 	add10StarsButton.onclick = function() {
 		var i;
 		for( i = 0; i < 10; i++) {
-			addStarJS();
+			addStar();
 		}
 	};
 	testFrame.appendChild(add10StarsButton);
@@ -183,12 +165,12 @@ function addStarUI() {
 	add100StarsButton = document.createElement("div");
 	add100StarsButton.className = "buttonDefault buttonSmall buttonEnabled";
 	add100StarsButton.style.marginLeft = "435px";
-	add100StarsButton.style.marginTop = (topPadding + 250) + "px";
+	add100StarsButton.style.marginTop = "250px";
 	add100StarsButton.innerHTML = "+100";
 	add100StarsButton.onclick = function() {
 		var i;
 		for( i = 0; i < 100; i++) {
-			addStarJS();
+			addStar();
 		}
 	};
 	testFrame.appendChild(add100StarsButton);
@@ -217,7 +199,7 @@ function updateParallaxStars() {
 		// then check and see if it's offscreen.
 		if(starPosition < -50) {
 			/* It's offscreen - move it to the right. */
-			resetStarJS(starlist[i]);
+			resetStar(starlist[i]);
 		}
 		i++;
 	}
@@ -232,6 +214,5 @@ function initParallaxStarfield() {
 	starlist = [];
 
 	initStarfieldJS(updateParallaxStars);
-	topPadding = 0;
 	addStarUI();
 }

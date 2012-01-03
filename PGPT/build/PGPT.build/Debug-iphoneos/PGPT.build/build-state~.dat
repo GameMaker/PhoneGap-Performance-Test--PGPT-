@@ -1,0 +1,633 @@
+TPGPT
+v4
+r1
+cCheck dependencies
+cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/PGPT.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Info.plist PGPT/PGPT-Info.plist
+cProcessPCH /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PGPT-Prefix-haxrtoduqkdstybspskogfchjhex/PGPT-Prefix.pch.gch PGPT/PGPT-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/main.o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/main.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/AppDelegate.o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+cLd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT normal armv7
+cGenerateDSYMFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app.dSYM /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT
+cCopyStringsFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj/InfoPlist.strings PGPT/en.lproj/InfoPlist.strings
+cCopyStringsFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj/Localizable.strings PGPT/Resources/en.lproj/Localizable.strings
+cCopyStringsFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/es.lproj/Localizable.strings PGPT/Resources/es.lproj/Localizable.strings
+cCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon.png PGPT/Resources/icons/icon.png
+cCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon@2x.png PGPT/Resources/icons/icon@2x.png
+cCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon-72.png PGPT/Resources/icons/icon-72.png
+cCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default.png PGPT/Resources/splash/Default.png
+cCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default@2x.png PGPT/Resources/splash/Default@2x.png
+cCpResource PGPT/Resources/Capture.bundle build/Debug-iphoneos/PGPT.app/Capture.bundle
+cCopyPlistFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PhoneGap.plist PGPT/PhoneGap.plist
+cCpResource www build/Debug-iphoneos/PGPT.app/www
+cGenerateDSYMFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app.dSYM /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT
+cPhaseScriptExecution "Run Script" /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Script-E17E252714AC273F00337F63.sh
+cProcessProductPackaging "/Users/pouncerproductions/Library/MobileDevice/Provisioning Profiles/70EAED60-5FAE-4EEE-80AC-5B37AD592EAA.mobileprovision" /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/pouncerproductions/Library/MobileDevice/Provisioning Profiles/70EAED60-5FAE-4EEE-80AC-5B37AD592EAA.mobileprovision" /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/embedded.mobileprovision
+cTouch /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent
+cCodeSign /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk
+c000000004E7840290000000000000110
+t1316503593
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+c000000004E5C595800000000000001A7
+t1314675032
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+c000000004E5C595800000000000001E5
+t1314675032
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004E7807DB000000000015F8A0
+t1316489179
+s1439904
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000004E7805440000000000110A50
+t1316488516
+s1116752
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c000000004E780943000000000012D550
+t1316489539
+s1234256
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004E72F36E00000000005AF640
+t1316156270
+s5961280
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004E72F28700000000003AB0A0
+t1316156039
+s3846304
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004E7805AD0000000000076750
+t1316488621
+s485200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004E78069100000000000748C0
+t1316488849
+s477376
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004E72F3440000000000529540
+t1316156228
+s5412160
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004E72F3370000000000001534
+t1316156215
+s5428
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h
+c000000004E72F3370000000000001ADB
+t1316156215
+s6875
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h
+c000000004E72F337000000000000183B
+t1316156215
+s6203
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h
+c000000004E72F3370000000000000E81
+t1316156215
+s3713
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSError.h
+c000000004E72F3370000000000001B2E
+t1316156215
+s6958
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h
+c000000004E72F3370000000000003B3D
+t1316156215
+s15165
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h
+c000000004E72F337000000000000603B
+t1316156215
+s24635
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c000000004E780B2400000000002900F0
+t1316490020
+s2687216
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004E72F558000000000006E530
+t1316156760
+s451888
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004E72F8910000000000173260
+t1316157585
+s1520224
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004E72F29300000000000C33E0
+t1316156051
+s799712
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004E7808770000000000000BCB
+t1316489335
+s3019
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004E7808C7000000000078BE50
+t1316489415
+s7913040
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/usr/include/AvailabilityMacros.h
+c000000004E5C5D5E0000000000007A5E
+t1314676062
+s31326
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/usr/include/TargetConditionals.h
+c000000004E5C5D5E00000000000031E9
+t1314676062
+s12777
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/usr/include/stdint.h
+c000000004E6059C200000000000018EF
+t1314937282
+s6383
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/usr/llvm-gcc-4.2/lib/gcc/arm-apple-darwin10/4.2.1/include/limits.h
+c000000004E44C0F20000000000000D03
+t1313128690
+s3331
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/usr/llvm-gcc-4.2/lib/gcc/arm-apple-darwin10/4.2.1/include/stddef.h
+c000000004E44C0F20000000000003197
+t1313128690
+s12695
+
+N/Users/Shared/PhoneGap/Frameworks/PhoneGap.framework/Headers/JSONKit.h
+c000000004EB3312C0000000000002DBE
+t1320366380
+s11710
+i<stddef.h>
+i<stdint.h>
+i<limits.h>
+i<TargetConditionals.h>
+i<AvailabilityMacros.h>
+i<Foundation/NSArray.h>
+i<Foundation/NSData.h>
+i<Foundation/NSDictionary.h>
+i<Foundation/NSError.h>
+i<Foundation/NSObjCRuntime.h>
+i<Foundation/NSString.h>
+
+N/Users/Shared/PhoneGap/Frameworks/PhoneGap.framework/Headers/PhoneGapDelegate.h
+c000000004EB3312C0000000000000818
+t1320366380
+s2072
+i<UIKit/UIKit.h>
+i"JSONKit.h"
+
+N/Users/Shared/PhoneGap/Frameworks/PhoneGap.framework/Headers/PhoneGapViewController.h
+c000000004EB3312C00000000000001D8
+t1320366380
+s472
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/Shared/PhoneGap/Frameworks/PhoneGap.framework/PhoneGap
+c000000004EB3312C0000000000189BC7
+t1320366380
+s1612743
+
+N/Users/pouncerproductions/Library/MobileDevice/Provisioning Profiles/70EAED60-5FAE-4EEE-80AC-5B37AD592EAA.mobileprovision
+c000000004EFCECEB0000000000001C8C
+t1325198571
+s7308
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.h
+c000000004EFBEFBF000000000000028C
+t1325133759
+s652
+i<UIKit/UIKit.h>
+i<PhoneGap/PhoneGapDelegate.h>
+i"PhoneGapDelegate.h"
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.m
+c000000004EFBEFBF0000000000000D06
+t1325133759
+s3334
+i"AppDelegate.h"
+i<PhoneGap/PhoneGapViewController.h>
+i"PhoneGapViewController.h"
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/PGPT-Prefix.pch
+c000000004EFBEFBF000000000000008B
+t1325133759
+s139
+i<UIKit/UIKit.h>
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/PhoneGap.plist
+c000000004EFBEFBF00000000000005F9
+t1325133759
+s1529
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/Capture.bundle
+c000000004EFBEFBF0000000000000242
+t1325133759
+s578
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/en.lproj/Localizable.strings
+c000000004EFBEFBF0000000000000248
+t1325133759
+s584
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/es.lproj/Localizable.strings
+c000000004EFBEFBF0000000000000254
+t1325133759
+s596
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon-72.png
+c000000004EB3305500000000000013B9
+t1320366165
+s5049
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon.png
+c000000004EB330550000000000000C36
+t1320366165
+s3126
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon@2x.png
+c000000004EB3305500000000000014DC
+t1320366165
+s5340
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/splash/Default.png
+c000000004EB3305500000000000033AA
+t1320366165
+s13226
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/splash/Default@2x.png
+c000000004EB330550000000000007F9A
+t1320366165
+s32666
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/en.lproj/InfoPlist.strings
+c000000004EFBEFBF000000000000002D
+t1325133759
+s45
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/main.m
+c000000004EFBEFBF0000000000000175
+t1325133759
+s373
+i<UIKit/UIKit.h>
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app.dSYM
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Capture.bundle
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default.png
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default@2x.png
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Info.plist
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PhoneGap.plist
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PkgInfo
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/ResourceRules.plist
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj/Localizable.strings
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/es.lproj/Localizable.strings
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon-72.png
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon.png
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon@2x.png
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/www
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/AppDelegate.o
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/PGPT.LinkFileList
+c000000004EFD5DFB000000000000011D
+t1325227515
+s285
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent
+t2
+s0
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Script-E17E252714AC273F00337F63.sh
+c000000004EFD5DFB000000000000030C
+t1325227515
+s780
+
+N/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/www
+c000000004EFCD1BB0000000000000110
+t1325191611
+s272
+
+N/var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PGPT-Prefix-haxrtoduqkdstybspskogfchjhex/PGPT-Prefix.pch.gch
+t2
+s0
+
+NPGPT/PGPT-Info.plist
+c000000004EFBEFE7000000000000058D
+t1325133799
+s1421
+
+CBuild AST from /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.m
+r0
+
+CBuild AST from /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies7f693d7b95adb441^7aa6577b95adb441^---0#1#0#--18"Check dependencies36"D77B5410-D083-4279-A588-7BFE674628C7-
+
+CCodeSign /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app
+s346920320.576926
+e346920321.197557
+r1
+xCodeSign
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"CodeSign build/Debug-iphoneos/PGPT.app4dc0938095adb441^1893328195adb441^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/0000000000000000^798"CodeSign build/Debug-iphoneos/PGPT.app    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Aaron Cammarata (9ZLHL49XRV)" --resource-rules=/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/ResourceRules.plist --entitlements /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app36"68170A44-AD9D-47B2-889C-D62F353CE21D-
+
+CCompileC build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/AppDelegate.o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s346920317.601793
+e346920317.766940
+r1
+xCompileC
+xbuild/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/AppDelegate.o
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.m79209a7d95adb441^a356c47d95adb441^---0#0#0#-19%DVTDocumentLocation2@110"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.m0000000000000000^1797"CompileC build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/AppDelegate.o PGPT/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DPHONEGAP_FRAMEWORK=YES -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.hmap -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/include -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources/armv7 -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources -F/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos -F/Users/Shared/PhoneGap/Frameworks -include /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PGPT-Prefix-haxrtoduqkdstybspskogfchjhex/PGPT-Prefix.pch -c /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Classes/AppDelegate.m -o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/AppDelegate.o36"332E0B74-A279-417D-AE52-E90700340EF4-
+
+CCompileC build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/main.o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/main.m normal armv7 objective-c com.apple.compilers.llvmgcc42
+s346920317.601239
+e346920317.736703
+r1
+xCompileC
+xbuild/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/main.o
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/main.mb8029a7d95adb441^8d99bc7d95adb441^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/main.m0000000000000000^1753"CompileC build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/main.o PGPT/main.m normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DPHONEGAP_FRAMEWORK=YES -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.hmap -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/include -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources/armv7 -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources -F/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos -F/Users/Shared/PhoneGap/Frameworks -include /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PGPT-Prefix-haxrtoduqkdstybspskogfchjhex/PGPT-Prefix.pch -c /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/main.m -o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/main.o36"C83BD552-E57B-4085-B27A-5EF37426686F-
+
+CCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default.png PGPT/Resources/splash/Default.png
+s346920319.654705
+e346920320.297108
+r1
+xCopyPNGFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default.png
+xPGPT/Resources/splash/Default.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"CopyPNGFile build/Debug-iphoneos/PGPT.app/Default.png PGPT/Resources/splash/Default.png72a8a77f95adb441^62104c8095adb441^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/splash/Default.png0000000000000000^662"CopyPNGFile build/Debug-iphoneos/PGPT.app/Default.png PGPT/Resources/splash/Default.png    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/splash/Default.png /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default.png36"ACF88F59-7B2B-4907-BEF4-AB499B9046BF-
+
+CCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default@2x.png PGPT/Resources/splash/Default@2x.png
+s346920319.654893
+e346920320.297133
+r1
+xCopyPNGFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default@2x.png
+xPGPT/Resources/splash/Default@2x.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"CopyPNGFile build/Debug-iphoneos/PGPT.app/Default@2x.png PGPT/Resources/splash/Default@2x.png28b5a77f95adb441^c11d4c8095adb441^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/splash/Default@2x.png0000000000000000^682"CopyPNGFile "build/Debug-iphoneos/PGPT.app/Default@2x.png" "PGPT/Resources/splash/Default@2x.png"    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/splash/Default@2x.png" "/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Default@2x.png"36"8810CB2E-F38B-4570-A010-B02062A28223-
+
+CCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon-72.png PGPT/Resources/icons/icon-72.png
+s346920319.654613
+e346920320.160486
+r1
+xCopyPNGFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon-72.png
+xPGPT/Resources/icons/icon-72.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"CopyPNGFile build/Debug-iphoneos/PGPT.app/icon-72.png PGPT/Resources/icons/icon-72.pngb2a1a77f95adb441^d926298095adb441^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon-72.png0000000000000000^660"CopyPNGFile build/Debug-iphoneos/PGPT.app/icon-72.png PGPT/Resources/icons/icon-72.png    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon-72.png /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon-72.png36"2B5CC5CD-C672-4110-96BD-EC5B1C65F557-
+
+CCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon.png PGPT/Resources/icons/icon.png
+s346920319.653610
+e346920320.160494
+r1
+xCopyPNGFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon.png
+xPGPT/Resources/icons/icon.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"CopyPNGFile build/Debug-iphoneos/PGPT.app/icon.png PGPT/Resources/icons/icon.png9e60a77f95adb441^912b298095adb441^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon.png0000000000000000^648"CopyPNGFile build/Debug-iphoneos/PGPT.app/icon.png PGPT/Resources/icons/icon.png    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon.png /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon.png36"E96754A4-DB1E-4C27-B7E2-3D2F769268D4-
+
+CCopyPNGFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon@2x.png PGPT/Resources/icons/icon@2x.png
+s346920319.654549
+e346920320.160500
+r1
+xCopyPNGFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon@2x.png
+xPGPT/Resources/icons/icon@2x.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"CopyPNGFile build/Debug-iphoneos/PGPT.app/icon@2x.png PGPT/Resources/icons/icon@2x.pngc39da77f95adb441^b51b298095adb441^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon@2x.png0000000000000000^668"CopyPNGFile "build/Debug-iphoneos/PGPT.app/icon@2x.png" "PGPT/Resources/icons/icon@2x.png"    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/icons/icon@2x.png" "/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/icon@2x.png"36"90651422-7B98-43F4-9FF9-81A1B78A64C2-
+
+CCopyPlistFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PhoneGap.plist PGPT/PhoneGap.plist
+s346920320.161673
+e346920320.164885
+r1
+xCopyPlistFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PhoneGap.plist
+xPGPT/PhoneGap.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection24"Copy PGPT/PhoneGap.plistcd72298095adb441^b2682a8095adb441^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/PhoneGap.plist0000000000000000^448"CopyPlistFile build/Debug-iphoneos/PGPT.app/PhoneGap.plist PGPT/PhoneGap.plist    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app -- PGPT/PhoneGap.plist36"2BC663C5-A7E6-496E-B989-897AA68F98D3-
+
+CCopyStringsFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj/InfoPlist.strings PGPT/en.lproj/InfoPlist.strings
+s346920319.653187
+e346920319.656753
+r1
+xCopyStringsFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj/InfoPlist.strings
+xPGPT/en.lproj/InfoPlist.strings
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy PGPT/en.lproj/InfoPlist.stringsf644a77f95adb441^8e21a87f95adb441^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/en.lproj/InfoPlist.strings0000000000000000^536"CopyStringsFile build/Debug-iphoneos/PGPT.app/en.lproj/InfoPlist.strings PGPT/en.lproj/InfoPlist.strings    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj -- PGPT/en.lproj/InfoPlist.strings36"57DE2C88-8F78-4CE8-9742-4E5B5F6742B3-
+
+CCopyStringsFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj/Localizable.strings PGPT/Resources/en.lproj/Localizable.strings
+s346920319.653530
+e346920319.657332
+r1
+xCopyStringsFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj/Localizable.strings
+xPGPT/Resources/en.lproj/Localizable.strings
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy PGPT/Resources/en.lproj/Localizable.strings755aa77f95adb441^304aa87f95adb441^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/en.lproj/Localizable.strings0000000000000000^562"CopyStringsFile build/Debug-iphoneos/PGPT.app/en.lproj/Localizable.strings PGPT/Resources/en.lproj/Localizable.strings    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/en.lproj -- PGPT/Resources/en.lproj/Localizable.strings36"89F02CC9-037F-4BDC-ADE8-158C85F721EF-
+
+CCopyStringsFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/es.lproj/Localizable.strings PGPT/Resources/es.lproj/Localizable.strings
+s346920319.653581
+e346920319.658556
+r1
+xCopyStringsFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/es.lproj/Localizable.strings
+xPGPT/Resources/es.lproj/Localizable.strings
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy PGPT/Resources/es.lproj/Localizable.strings355da77f95adb441^b797a87f95adb441^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/es.lproj/Localizable.strings0000000000000000^562"CopyStringsFile build/Debug-iphoneos/PGPT.app/es.lproj/Localizable.strings PGPT/Resources/es.lproj/Localizable.strings    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/es.lproj -- PGPT/Resources/es.lproj/Localizable.strings36"3795F256-CCEB-49E3-8E11-5E98FD4CE561-
+
+CCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/PGPT.app/ResourceRules.plist
+s346920315.348058
+e346920315.389701
+r1
+xCpResource
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/PGPT.app/ResourceRules.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/Debug-iphoneos/PGPT.app/ResourceRules.plist1329597b95adb441^7ac5637b95adb441^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/ResourceRules.plist00f82c1bdcffdf42^650"CpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/PGPT.app/ResourceRules.plist    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app36"8BAD3F0B-51C5-4242-91E5-9A5C5F1251E2-
+
+CCpResource PGPT/Resources/Capture.bundle build/Debug-iphoneos/PGPT.app/Capture.bundle
+s346920320.161651
+e346920320.355127
+r1
+xCpResource
+xPGPT/Resources/Capture.bundle
+xbuild/Debug-iphoneos/PGPT.app/Capture.bundle
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/Debug-iphoneos/PGPT.app/Capture.bundlef774298095adb441^d9ea5a8095adb441^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Capture.bundle00f82c1bdcffdf42^593"CpResource PGPT/Resources/Capture.bundle build/Debug-iphoneos/PGPT.app/Capture.bundle    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/Resources/Capture.bundle /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app36"B6E26F9C-1DAD-4E10-920B-A3B81D45E019-
+
+CCpResource www build/Debug-iphoneos/PGPT.app/www
+s346920320.166004
+e346920320.368728
+r1
+xCpResource
+xwww
+xbuild/Debug-iphoneos/PGPT.app/www
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Copy build/Debug-iphoneos/PGPT.app/wwwc18b2a8095adb441^45665e8095adb441^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/www00f82c1bdcffdf42^530"CpResource www build/Debug-iphoneos/PGPT.app/www    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/www /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app36"51D90522-41A9-4F9B-A061-91C1391AA716-
+
+CGenerateDSYMFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app.dSYM /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT
+s346920320.371512
+e346920320.386596
+r1
+xGenerateDSYMFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app.dSYM
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Generating /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app.dSYMe5295f8095adb441^dff8628095adb441^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app.dSYM/0000000000000000^527"GenerateDSYMFile build/Debug-iphoneos/PGPT.app.dSYM build/Debug-iphoneos/PGPT.app/PGPT    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT -o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app.dSYM36"D14B1FB9-4FFE-49F9-A7D0-F15C5D89FFBF-
+
+CLd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT normal armv7
+s346920317.768144
+e346920319.568512
+r1
+xLd
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT
+xnormal
+xarmv7
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Link /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPTc3b7c47d95adb441^ec8a917f95adb441^---0#0#0#--1429"Ld build/Debug-iphoneos/PGPT.app/PGPT normal armv7    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos -F/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos -F/Users/Shared/PhoneGap/Frameworks -filelist /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/PGPT.LinkFileList -dead_strip -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak_library /usr/lib/libSystem.B.dylib -miphoneos-version-min=3.0 -framework Foundation -framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -framework AVFoundation -framework CoreLocation -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework MobileCoreServices -framework CoreMedia -framework PhoneGap -o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PGPT36"AFF4ED02-80E8-4F58-8D63-5808CE1005F0-
+
+CPhaseScriptExecution "Run Script" /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Script-E17E252714AC273F00337F63.sh
+s346920320.388970
+e346920320.490574
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Script-E17E252714AC273F00337F63.sh
+o		E17E257614AC276200337F63 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'8f38648095adb441^7c987d8095adb441^-131"		E17E257614AC276200337F63 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };1(21%IDEActivityLogMessage2@131"		E17E257614AC276200337F63 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };-346920320#0#131#-0#-----0#0#0#--19148"PhaseScriptExecution "Run Script" build/PGPT.build/Debug-iphoneos/PGPT.build/Script-E17E252714AC273F00337F63.sh    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER pouncerproductions    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS armv7    setenv ARCHS_STANDARD_32_64_BIT armv7    setenv ARCHS_STANDARD_32_BIT armv7    setenv ARCHS_UNIVERSAL_IPHONE_OS armv7    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build    setenv BUILD_ROOT /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos    setenv CACHE_ROOT /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app    setenv CODE_SIGNING_ALLOWED YES    setenv CODE_SIGNING_REQUIRED YES    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneOSCodeSignContext    setenv CODE_SIGN_IDENTITY "iPhone Developer: Aaron Cammarata (9ZLHL49XRV)"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos    setenv CONFIGURATION_TEMP_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos    setenv CONTENTS_FOLDER_PATH PGPT.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH armv7    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH PGPT.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/PGPT.dst    setenv DWARF_DSYM_FILE_NAME PGPT.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos    setenv EFFECTIVE_PLATFORM_NAME -iphoneos    setenv EMBEDDED_PROFILE_NAME embedded.mobileprovision    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv ENTITLEMENTS_ALLOWED YES    setenv ENTITLEMENTS_REQUIRED YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH PGPT.app/Executables    setenv EXECUTABLE_FOLDER_PATH PGPT.app    setenv EXECUTABLE_NAME PGPT    setenv EXECUTABLE_PATH PGPT.app/PGPT    setenv FILE_LIST /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH PGPT.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos\" /Users/Shared/PhoneGap/Frameworks"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME PGPT.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER PGPT/PGPT-Prefix.pch    setenv GCC_PREPROCESSOR_DEFINITIONS PHONEGAP_FRAMEWORK=YES    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_THUMB_SUPPORT YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvmgcc42    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvmgcc42    setenv GCC_WARN_ABOUT_MISSING_PROTOTYPES YES    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE PGPT/PGPT-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH PGPT.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH PGPT.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/PGPT.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER pouncerproductions    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/PGPT.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH PGPT.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT-LinkMap-normal-armv7.txt    setenv LD_NO_PIE NO    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_armv7 /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal/armv7/PGPT.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH PGPT.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 10K549    setenv MAC_OS_X_VERSION_ACTUAL 1068    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0608    setenv NATIVE_ARCH armv7    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Objects-normal    setenv OBJROOT /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak_library /usr/lib/libSystem.B.dylib"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH PGPT.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PkgInfo    setenv PKGINFO_PATH PGPT.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneOS.platform    setenv PLATFORM_NAME iphoneos    setenv PLATFORM_PREFERRED_ARCH armv7    setenv PLATFORM_PRODUCT_BUILD_VERSION 9A334    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH PGPT.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH PGPT.app/PrivateHeaders    setenv PRODUCT_NAME PGPT    setenv PRODUCT_SETTINGS_PATH /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/PGPT-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT PGPT    setenv PROJECT_DERIVED_FILE_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/DerivedSources    setenv PROJECT_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PROJECT_FILE_PATH /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT.xcodeproj    setenv PROJECT_NAME PGPT    setenv PROJECT_TEMP_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build    setenv PROVISIONING_PROFILE 70EAED60-5FAE-4EEE-80AC-5B37AD592EAA    setenv PROVISIONING_PROFILE_REQUIRED YES    setenv PUBLIC_HEADERS_FOLDER_PATH PGPT.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv RESOURCE_RULES_REQUIRED YES    setenv REZ_COLLECTOR_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH PGPT.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk    setenv SDK_NAME iphoneos5.0    setenv SDK_PRODUCT_BUILD_VERSION 9A334    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH PGPT.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH PGPT.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv SRCROOT /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1,2    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME PGPT    setenv TARGET_BUILD_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos    setenv TARGET_NAME PGPT    setenv TARGET_TEMP_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build    setenv TEMP_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build    setenv TEMP_FILES_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build    setenv TEMP_FILE_DIR /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build    setenv TEMP_ROOT /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH PGPT.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER pouncerproductions    setenv USER_APPS_DIR /Users/pouncerproductions/Applications    setenv USER_LIBRARY_DIR /Users/pouncerproductions/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "armv6 armv7"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH PGPT.app/version.plist    setenv VERSION_INFO_BUILDER pouncerproductions    setenv VERSION_INFO_FILE PGPT_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:PGPT  PROJECT:PGPT-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME PGPT.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4C199    setenv XCODE_VERSION_ACTUAL 0420    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0420    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/Script-E17E252714AC273F00337F63.sh36"7B387396-1286-456D-B9AB-4D45AACCB0E5-
+
+CProcessInfoPlistFile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Info.plist PGPT/PGPT-Info.plist
+s346920315.348107
+e346920315.389968
+r1
+xProcessInfoPlistFile
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Info.plist
+xPGPT/PGPT-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process PGPT/PGPT-Info.plistaa2d597b95adb441^6bd4637b95adb441^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/PGPT-Info.plist0000000000000000^754"ProcessInfoPlistFile build/Debug-iphoneos/PGPT.app/Info.plist PGPT/PGPT-Info.plist    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility PGPT/PGPT-Info.plist -genpkginfo /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/ResourceRules.plist -o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/Info.plist36"EC067AEA-D2C9-4DA8-9F86-B0AF546930F4-
+
+CProcessPCH /Users/pouncerproductions/Library/Developer/Xcode/DerivedData/PGPT-dhhgbqmmqkdrmmctrmmnacxdajdq/Index/PrecompiledHeaders/PGPT-Prefix-ekhpmblootfujbgtppsmsxgnkafj_ast/PGPT-Prefix.pch.pth PGPT/PGPT-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PGPT-Prefix-haxrtoduqkdstybspskogfchjhex/PGPT-Prefix.pch.gch PGPT/PGPT-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42
+s346920315.392809
+e346920317.599881
+r1
+xProcessPCH
+x/var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PGPT-Prefix-haxrtoduqkdstybspskogfchjhex/PGPT-Prefix.pch.gch
+xPGPT/PGPT-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection31"Precompile PGPT/PGPT-Prefix.pchfbae647b95adb441^ea92997d95adb441^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/PGPT-Prefix.pch0000000000000000^1724"ProcessPCH /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PGPT-Prefix-haxrtoduqkdstybspskogfchjhex/PGPT-Prefix.pch.gch PGPT/PGPT-Prefix.pch normal armv7 objective-c com.apple.compilers.llvmgcc42    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DPHONEGAP_FRAMEWORK=YES -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.hmap -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/include -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources/armv7 -I/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/DerivedSources -F/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos -F/Users/Shared/PhoneGap/Frameworks -c /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/PGPT/PGPT-Prefix.pch -o /var/folders/JC/JC8LcdblEQ03RiZshXaHe++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PGPT-Prefix-haxrtoduqkdstybspskogfchjhex/PGPT-Prefix.pch.gch36"AF26C8EE-3EB6-4907-A496-EA7B506ABF99-
+
+CProcessProductPackaging "/Users/pouncerproductions/Library/MobileDevice/Provisioning Profiles/70EAED60-5FAE-4EEE-80AC-5B37AD592EAA.mobileprovision" /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/embedded.mobileprovision
+s346920320.541827
+e346920320.545547
+r1
+xProcessProductPackaging
+x/Users/pouncerproductions/Library/MobileDevice/Provisioning Profiles/70EAED60-5FAE-4EEE-80AC-5B37AD592EAA.mobileprovision
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/embedded.mobileprovision
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection202"ProcessProductPackaging "/Users/pouncerproductions/Library/MobileDevice/Provisioning Profiles/70EAED60-5FAE-4EEE-80AC-5B37AD592EAA.mobileprovision" build/Debug-iphoneos/PGPT.app/embedded.mobileprovision74cf8a8095adb441^3ba98b8095adb441^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/embedded.mobileprovision0000000000000000^688"ProcessProductPackaging "/Users/pouncerproductions/Library/MobileDevice/Provisioning Profiles/70EAED60-5FAE-4EEE-80AC-5B37AD592EAA.mobileprovision" build/Debug-iphoneos/PGPT.app/embedded.mobileprovision    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/pouncerproductions/Library/MobileDevice/Provisioning Profiles/70EAED60-5FAE-4EEE-80AC-5B37AD592EAA.mobileprovision" -o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app/embedded.mobileprovision36"4659A183-3130-4C60-99D6-D06741B02566-
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent
+s346920320.557479
+e346920320.574492
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection166"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent93c48e8095adb441^4015938095adb441^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent00f82c1bdcffdf42^642"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/PGPT.build/Debug-iphoneos/PGPT.build/PGPT.xcent36"0FE01FBD-4F6A-4592-B6F9-A39EB2012964-
+
+CTouch /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app
+s346920320.548215
+e346920320.554987
+r1
+xTouch
+x/Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Touch /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app016c8c8095adb441^d7168e8095adb441^---0#0#0#--355"Touch build/Debug-iphoneos/PGPT.app    cd /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pouncerproductions/dev/PhoneGap-Performance-Test--PGPT-/PGPT/build/Debug-iphoneos/PGPT.app36"014B98D8-2F09-4879-91BD-E083D92A81EE-
+

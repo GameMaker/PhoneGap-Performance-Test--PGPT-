@@ -17,7 +17,7 @@ function updateFramerateDisplay() {
 	}
 	avg = avg / framerateArray.length;
 	framerateDisplay.innerHTML = "Time: " + (new Date().getTime()) + "<br>Time since last tick: " + frameDuration + "<br>Framerate: " + currentFramerate + "<br>Avg (" + framerateArray.length + ") Framerate: " + Math.round(avg) + "<br>High Framerate: " + framerateHigh + "<br>Low framerate: " + framerateLow;
-	// log("Updated Framerate Display:\nTime: " + (new Date().getTime()) + "\nTime since last tick: " + frameDuration + "\nFramerate: " + currentFramerate + "\nAvg (" + framerateArray.length + ") Framerate: " + Math.round(avg) + "\nHigh Framerate: " + framerateHigh + "\nLow framerate: " + framerateLow);
+	log("Updated Framerate Display:\nTime: " + (new Date().getTime()) + "\nTime since last tick: " + frameDuration + "\nFramerate: " + currentFramerate + "\nAvg (" + framerateArray.length + ") Framerate: " + Math.round(avg) + "\nHigh Framerate: " + framerateHigh + "\nLow framerate: " + framerateLow);
 }
 
 /* Calculate and track the current performance. Does NOT update the onscreen readout,
@@ -50,9 +50,9 @@ function updateFramerateJS() {
 	 * the correct amount. This should produce an even velocity of starfield movement, even
 	 * if the framerate drops.
 	 */
-	// log("Entering updateFramerateJS");
+	log("Entering updateFramerateJS");
 	updateFramerate();
-	// log("Just updated framerate. Dur = " + frameDuration + " CFR: " + currentFramerate);
+	log("Just updated framerate. Dur = " + frameDuration + " CFR: " + currentFramerate);
 	/* Now we know how long the last frame took (frameDuration). We use that to move the
 	 * starfield the correct amount. frameDuration is the # of milliseconds since last update,
 	 * and we want to move it 30 px / sec, or 1 px / 33.3ms, or .03px/ms.
@@ -71,10 +71,10 @@ function updateFramerateJS() {
 
 	if(jsUpdateCallback) {
 		jsUpdateCallback();
-		// log("       And drew a frame, too");
+		log("       And drew a frame, too");
 	}
 	setTimeout(updateFramerateJS, 0);
-	// log("Leaving updateFramerateJS");
+	log("Leaving updateFramerateJS");
 }
 
 /* Initialize the framerate reporting system and turn it on
@@ -224,7 +224,6 @@ function initStarfieldJS(callback) {
 
 /* Ditch the old one before we set up the next test */
 function clearStarfield() {
-	jsUpdateCallback = null;
 	testFrame.parentNode.removeChild(testFrame);
 	clearInterval(framerateInterval);
 }
