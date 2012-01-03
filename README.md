@@ -6,7 +6,9 @@ This project is meant to facilitate discussion about best practices for building
 Its focus is to allow users to tweak and twiddle to see what changes affect performance the most, so we can make informed decisions in our architectures. It is specifically targetted at the creation of smoothly animated interactive games at (hopefully) native speeds.
 
 ## LICENSE
-This code is free. Take it, copy it, use it, learn from it.
+With the exception of PhoneGap.js, this code is free. PhoneGap is provided under the Apache License. See the LICENSE file for details.
+
+Take it, copy it, use it, learn from it.
 
 Then add to it. Discuss it. Dissect it. Improve it.
 
